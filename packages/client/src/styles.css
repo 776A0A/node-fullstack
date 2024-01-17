@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+    @apply p-0 m-0 box-border;
+}
+
+html,
+body,
+#app {
+    @apply w-screen h-screen;
+}
+
+@layer components {
+    .center-flex {
+        @apply flex justify-center items-center;
+    }
+    .center-abs {
+        @apply absolute left-1/2 top-1/2 transform-gpu -translate-x-1/2 -translate-y-1/2;
+    }
+    .center-x-abs {
+        @apply absolute left-1/2 transform-gpu -translate-x-1/2;
+    }
+    .center-y-abs {
+        @apply absolute top-1/2 transform-gpu -translate-y-1/2;
+    }
+}
