@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 
@@ -6,7 +8,11 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': '/src',
+      '@': new URL('./src', import.meta.url).pathname,
     },
+  },
+  test: {
+    name: 'client',
+    environment: 'happy-dom',
   },
 })
