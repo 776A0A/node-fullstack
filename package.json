@@ -1,23 +1,25 @@
 {
-  "name": "node-fullstack",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "scripts": {
-    "test": "vitest",
-    "test:ui": "vitest --ui --coverage.enabled=true",
-    "coverage": "vitest run --coverage"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.5",
-    "@vitest/coverage-v8": "^1.2.1",
-    "@vitest/ui": "^1.2.1",
-    "typescript": "^5.3.3",
-    "utility-types": "^3.10.0",
-    "vite-tsconfig-paths": "^4.3.1",
-    "vitest": "^1.2.1"
-  }
+    "name": "node-fullstack",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "test": "vitest",
+        "test:ui": "vitest --ui --coverage.enabled=true",
+        "coverage": "vitest run --coverage",
+        "u": "ncu"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.5",
+        "@vitest/coverage-v8": "^1.2.1",
+        "@vitest/ui": "^1.2.1",
+        "npm-check-updates": "^16.14.14",
+        "typescript": "^5.3.3",
+        "utility-types": "^3.10.0",
+        "vite-tsconfig-paths": "^4.3.1",
+        "vitest": "^1.2.1"
+    }
 }
